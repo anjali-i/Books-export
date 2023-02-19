@@ -1,0 +1,89 @@
+
+* {
+	margin: 0; 
+  padding: 0; 
+	box-sizing: border-box;
+	letter-spacing: 0.05rem;
+}
+
+.App {
+	font-family: sans-serif;
+	width: 90vw;
+	max-width: 1170px;
+	margin: 5rem auto;
+	display: grid;
+	gap: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+	.App {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fafafa;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	box-shadow: 2px -2px 4px 1px rgba(0, 0, 0, 0.06);
+	transition: 0.3s;
+}
+.insideBox {
+	max-width: 200px;
+}
+
+.book:hover {
+	transform: scale(1.02);
+	cursor: default;
+}
+
+.book img {
+	border-radius: 0.5rem;
+	margin: 0.5rem auto;
+}
+
+.book h4 {
+	margin: 0.5rem 0;
+	font-size: 0.8rem;
+	color: #1b1b1b;
+}
+
+.book p {
+	font-size: 0.7rem;
+	font-style: italic;
+	color: grey;
+}
+
+.book button {
+	margin: 0.5rem auto;
+	padding: 0.5rem 6rem 0.5rem 0.5rem;
+	width: 100%;
+	background: none;
+	border: none;
+	border-left: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-radius: 0 0 0 0.3rem;
+	font-size: 0.7rem;
+	color: #333333;
+	outline: none;
+	transition: 0.3s;
+}
+
+.book button:hover {
+	padding: 0.5rem;
+	background-color: rgba(122, 212, 19, 0.15);
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+	border-radius: 0.5rem 0.5rem 0 0.5rem;
+	color: black;
+	cursor: pointer;
+}
+
+.book button:active {
+	transform: scale(0.95);
+	outline: none;
+}
+
